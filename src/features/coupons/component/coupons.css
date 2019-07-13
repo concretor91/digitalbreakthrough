@@ -1,0 +1,16 @@
+.Coupon {
+    background-color: white;
+    border-bottom:1px solid #dfe1e5;
+    border-right:1px solid #dfe1e5;
+    height: 80px;
+    cursor: pointer;
+  }
+  
+  .Coupon:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+    border: 0px;
+  }
+
+  /* body {
+      background-color: #ededed;
+  } */
