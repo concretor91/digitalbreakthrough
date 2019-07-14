@@ -39,7 +39,7 @@ class CouponsView extends React.Component<Props> {
                 {this.props.isLoading ? <PlaceHolderLoader /> :
                     this.props.coupons.length > 0 ?
                         <div className='text-left'>
-                            {/* <h5>Доступные купоны:</h5>
+                            <h5>Доступные льготы:</h5>
                             <div className='row text-center'>
                                 {this.props.coupons && this.props.coupons.filter(x => x.used == false).length > 0 ? this.props.coupons.filter(x => x.used == false).map(coupon =>
                                     <div key={coupon.id} className="card mb-4 shadow-sm">
@@ -53,10 +53,10 @@ class CouponsView extends React.Component<Props> {
                                         </div>
                                     </div>
                                 ) : <div>Все купоны активированы</div>}
-                            </div> */}
+                            </div>
                             <h5>Использованные льготы:</h5>
                             <div className='row text-center'>
-                                {this.props.coupons ? this.props.coupons.map(coupon =>
+                                {this.props.coupons ? this.props.coupons.filter(x => x.used == true).map(coupon =>
                                     <div key={coupon.id} className="card mb-4 shadow-sm">
                                         <div className="card-body">
                                             <p className="card-text">{coupon.title}</p>
